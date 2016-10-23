@@ -26,24 +26,25 @@ public class NormalRover implements Rover {
 		if (!surface.contains(xNew, yNew)) {
 			xNew = x;
 			yNew = y;
-//			markSurface();
 		}
 		x = xNew;
 		y = yNew;
 		markSurface();
 	}
 	
+	@Override
 	public int getX() {
 		return x;
 	}
 	
+	@Override
 	public int getY() {
 		return y;
 	}
-
+	
+	@Override
 	public void markSurface() {
 		surface.mark(x, y);
-
 	}
 
 }
