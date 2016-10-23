@@ -11,14 +11,11 @@ public enum Direction {
 
     private int deltaX;
     private int deltaY;
-    private Rotation reflX;
-    private Rotation reflY;
+
 
     private Direction(int deltaX, int deltaY, Rotation reflX, Rotation reflY) {
         this.deltaX = deltaX;
         this.deltaY = deltaY;
-        this.reflX = reflX;
-        this.reflY = reflY;
     }
 
     public int getdX() {
