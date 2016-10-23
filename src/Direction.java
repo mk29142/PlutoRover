@@ -1,6 +1,6 @@
 package src;
 
-import src.Rover;;
+import src.Rover;
 
 public enum Direction {
 
@@ -32,8 +32,8 @@ public enum Direction {
     public Direction rotate(Rotation rotation) {
         int index = (rotation == Rotation.LEFT ? ordinal() - 1
                 : ordinal() + 1);
-        if (index < 0 | index > 7) {
-            index = 8 - Math.abs(index);
+        if (index < 0 | index > 3) {
+            index = 4 - Math.abs(index);
         }
         return Direction.values()[index];
     }

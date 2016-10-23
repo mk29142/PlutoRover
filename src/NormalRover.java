@@ -15,8 +15,8 @@ public class NormalRover implements Rover {
 	}
 
 	@Override
-	public void rotate(Rotation r, int n) {
-
+	public void rotate(Rotation r) {
+		dir = dir.rotate(r);
 	}
 
 	@Override
