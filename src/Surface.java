@@ -20,7 +20,7 @@ public class Surface {
             }
         }
     }
-
+    
     public int getWidth() {
         return width;
     }
@@ -31,6 +31,13 @@ public class Surface {
 
     public boolean contains(int x, int y) {
         return x >= 0 && y >= 0 && x < width && y < height;
+    }
+    
+    public void mark(int x, int y) {
+        if (!contains(x, y))
+            return;
+        else
+            grid[height - y - 1][x] = '*';
     }
 
     @Override
